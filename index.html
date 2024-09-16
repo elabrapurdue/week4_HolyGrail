@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        header {
+
+            width: 90%;
+
+            height: 100px;
+
+            background-color: #2bf5f5;
+
+            border: 3px solid #ffb6d5;
+
+            padding: 10px;
+
+            margin: 25px;
+
+        }
+        nav {
+
+            position: fixed;
+
+            width: 90%;
+
+            height: 50px;
+
+            background-color: #f07be6;
+            border: 2px solid #801396;
+
+            position: fixed;
+
+            top: 170px;
+
+            left: 35px;
+
+        }
+        article {
+
+            width: 65%;
+
+            height: 200px;
+
+            background-color: #39f8bf;
+
+            border: 5px solid #2bf5f5;
+
+            position: relative;
+
+            top: 15px;
+
+        }
+        aside {
+
+            width: 40%;
+
+            height: 420px;
+
+            background-color: #f8e4b9;
+            border: 5px dotted #ffb6d5;
+            ;
+
+
+            position: absolute;
+
+            left: 50%;
+
+            right: 10%;
+
+            top: 235px;
+
+        }
+        footer {
+
+            width: 100%;
+
+            height: 50px;
+
+            background-color: #ffb6d5;
+            border: 2px solid #2bf5f5;
+
+            position: fixed;
+
+            bottom: 0px;
+
+        }
+        .articles {
+
+            position: relative;
+
+            left: 30px;
+
+            top: 45px;
+
+            width: 65%;
+
+            height: 70%;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>The header uses relative positioning, which means it is positioned relative to its normal place in the document flow. The header is offset by its margin and borders, but not by any additional properties.</p>
+    </header>
+
+    <nav>
+        <p>The nav uses fixed positioning. This keeps it fixed relative to the viewport, meaning it does not scroll with the page. It is offset 170 pixels from the top and 35 pixels from the left of the viewport.</p>
+    </nav>
+
+    <div>
+
+        <div class="articles">
+
+            <article>
+                <p>The article uses relative positioning. It is moved 15 pixels down from where it would normally be in the document flow. This offset does not affect the layout of other elements.</p>
+            </article>
+
+            <article>                
+                <p>The second article also uses relative positioning, similar to the first. It is offset 15 pixels from its normal position in the document flow.</p>
+            </article>
+
+        </div>
+
+    <aside>
+        <p>The aside uses absolute positioning, meaning it is positioned relative to its nearest positioned ancestor. Here, it is offset 55% from the left and 235 pixels from the top of its containing block.</p>
+    </aside>
+
+    </div>
+
+    <footer>
+        <p>The footer uses fixed positioning. It is fixed to the bottom of the viewport, so it remains visible at the bottom as you scroll the page. The bottom property keeps it flush with the bottom of the viewport.</p>
+    </footer>
+</body>
+</html>
